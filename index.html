@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PLAYER ONE — Basketball Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Court Background -->
+  <div class="court-bg">
+    <div class="court-lines">
+      <div class="center-circle"></div>
+      <div class="three-point-left"></div>
+      <div class="three-point-right"></div>
+      <div class="lane-left"></div>
+      <div class="lane-right"></div>
+      <div class="half-court"></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <span class="logo-num">00</span>
+      <span class="logo-text">PLAYER<span class="accent">ONE</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#journey">JOURNEY</a></li>
+      <li><a href="#skills">STATS</a></li>
+      <li><a href="#achievements">AWARDS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-tag reveal">WELCOME TO THE COURT</div>
+        <h1 class="hero-title reveal">
+          <span class="line1">siddharth</span>
+          <span class="line2">sama<span class="accent">.</span></span>
+        </h1>
+        <p class="hero-sub reveal">Full-Stack Developer &amp; Basketball Enthusiast<br/>Playing the game of code at championship level</p>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn-primary">VIEW MY PLAYS</a>
+          <a href="#contact" class="btn-secondary">RECRUIT ME</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="h-stat"><span class="h-num" data-count="67">0</span><span class="h-label">PROJECTS</span></div>
+          <div class="h-divider"></div>
+          <div class="h-stat"><span class="h-num" data-count="7">0</span><span class="h-label">YEARS EXP</span></div>
+          <div class="h-divider"></div>
+          <div class="h-stat"><span class="h-num" data-count="99">0</span><span class="h-label">COMMITS/MO</span></div>
+        </div>
+      </div>
+      <div class="hero-ball-wrap reveal">
+        <div class="ball-glow"></div>
+        <div class="basketball" id="basketball">
+          <div class="ball-inner">
+            <div class="ball-line h"></div>
+            <div class="ball-line v"></div>
+            <div class="ball-line c1"></div>
+            <div class="ball-line c2"></div>
+          </div>
+        </div>
+        <div class="ball-shadow"></div>
+        <div class="orbit orbit1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit2"><div class="orbit-dot"></div></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">01 / ABOUT</div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="jersey-card">
+          <div class="jersey-top">
+            <div class="jersey-num">23</div>
+            <div class="jersey-name">STORM</div>
+            <div class="jersey-team">TECH SQUAD</div>
+          </div>
+          <div class="jersey-stats">
+            <div class="js"><span>PPG</span><strong>28.4</strong></div>
+            <div class="js"><span>APG</span><strong>9.1</strong></div>
+            <div class="js"><span>RPG</span><strong>7.3</strong></div>
+          </div>
+        </div>
+        <div class="about-glow-ring"></div>
+      </div>
+      <div class="about-text reveal">
+        <h2 class="section-title">THE <span class="accent">PLAYER</span></h2>
+        <p class="about-desc">I'm a full-stack developer who approaches every project like a championship game — with precision, teamwork, and an unstoppable drive to win. Just like on the court, I read the game, adapt fast, and always deliver under pressure.</p>
+        <p class="about-desc">When I'm not shipping code, you'll find me breaking ankles on the hardwood or studying film of the greats — both in basketball and in software engineering.</p>
+        <div class="about-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Python</span>
+          <span class="tag">AI/ML</span>
+          <span class="tag">Three.js</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+        <a href="#" class="btn-primary" style="margin-top:2rem;display:inline-block">DOWNLOAD RESUME</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="section-label">02 / JOURNEY</div>
+    <h2 class="section-title center reveal">CAREER <span class="accent">TIMELINE</span></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal" data-year="2020">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-year">2020</div>
+          <h3 class="tl-title">ROOKIE SEASON</h3>
+          <p>Started my CS degree. Wrote my first "Hello World" and never looked back. Like any rookie, I was raw but hungry.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal right" data-year="2021">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-year">2021</div>
+          <h3 class="tl-title">SOPHOMORE SURGE</h3>
+          <p>Built my first full-stack app. Discovered React and fell in love. Started contributing to open source projects.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" data-year="2022">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-year">2022</div>
+          <h3 class="tl-title">ALL-STAR BREAKOUT</h3>
+          <p>Landed first internship at a tech startup. Shipped features used by 50K+ users. Named intern of the quarter.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal right" data-year="2023">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-year">2023</div>
+          <h3 class="tl-title">MVP SEASON</h3>
+          <p>Graduated. Joined as full-time engineer. Led a team of 4 to rebuild the core product architecture from scratch.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" data-year="2024">
+        <div class="tl-dot active"></div>
+        <div class="tl-content active">
+          <div class="tl-year">NOW</div>
+          <h3 class="tl-title">CHAMPIONSHIP MODE</h3>
+          <p>Senior developer. Building AI-powered products. Speaking at conferences. Still hungry for the next level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">03 / STATS</div>
+    <h2 class="section-title center reveal">PLAYER <span class="accent">STATS</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-skill="92">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">FRONTEND</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="92"></div>
+        </div>
+        <div class="skill-num">92</div>
+        <div class="skill-label">OVR</div>
+      </div>
+      <div class="skill-card reveal" data-skill="88">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-name">BACKEND</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="88"></div>
+        </div>
+        <div class="skill-num">88</div>
+        <div class="skill-label">OVR</div>
+      </div>
+      <div class="skill-card reveal" data-skill="85">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">AI / ML</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="85"></div>
+        </div>
+        <div class="skill-num">85</div>
+        <div class="skill-label">OVR</div>
+      </div>
+      <div class="skill-card reveal" data-skill="90">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">DATABASE</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="90"></div>
+        </div>
+        <div class="skill-num">90</div>
+        <div class="skill-label">OVR</div>
+      </div>
+      <div class="skill-card reveal" data-skill="78">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">DEVOPS</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="78"></div>
+        </div>
+        <div class="skill-num">78</div>
+        <div class="skill-label">OVR</div>
+      </div>
+      <div class="skill-card reveal" data-skill="95">
+        <div class="skill-icon">🏀</div>
+        <div class="skill-name">TEAMWORK</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="95"></div>
+        </div>
+        <div class="skill-num">95</div>
+        <div class="skill-label">OVR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="section-label">04 / AWARDS</div>
+    <h2 class="section-title center reveal">CHAMPIONSHIP <span class="accent">RINGS</span></h2>
+    <div class="achieve-grid">
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">🏆</div>
+        <div class="achieve-num counter" data-target="47">0</div>
+        <div class="achieve-label">PROJECTS SHIPPED</div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">⭐</div>
+        <div class="achieve-num counter" data-target="1200">0</div>
+        <div class="achieve-label">GITHUB STARS</div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">🔥</div>
+        <div class="achieve-num counter" data-target="365">0</div>
+        <div class="achieve-label">DAY STREAK</div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">👥</div>
+        <div class="achieve-num counter" data-target="50">0</div>
+        <div class="achieve-label">HAPPY CLIENTS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">05 / PROJECTS</div>
+    <h2 class="section-title center reveal">THE <span class="accent">ROSTER</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="card-num">#01</div>
+        <div class="card-position">POINT GUARD</div>
+        <div class="card-name">AI CHATBOT</div>
+        <div class="card-team">FULL-STACK</div>
+        <div class="card-stats">
+          <div class="cs"><span>React</span></div>
+          <div class="cs"><span>Node</span></div>
+          <div class="cs"><span>OpenAI</span></div>
+        </div>
+        <p class="card-desc">An intelligent chatbot powered by GPT-4 with real-time responses, conversation memory, and custom personas.</p>
+        <div class="card-btns">
+          <a href="#" class="btn-small">LIVE</a>
+          <a href="#" class="btn-small outline">CODE</a>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="card-num">#02</div>
+        <div class="card-position">SHOOTING GUARD</div>
+        <div class="card-name">E-COMMERCE</div>
+        <div class="card-team">FULL-STACK</div>
+        <div class="card-stats">
+          <div class="cs"><span>Next.js</span></div>
+          <div class="cs"><span>Stripe</span></div>
+          <div class="cs"><span>MongoDB</span></div>
+        </div>
+        <p class="card-desc">High-performance e-commerce platform with real-time inventory, payment processing, and analytics dashboard.</p>
+        <div class="card-btns">
+          <a href="#" class="btn-small">LIVE</a>
+          <a href="#" class="btn-small outline">CODE</a>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="card-num">#03</div>
+        <div class="card-position">SMALL FORWARD</div>
+        <div class="card-name">STAT TRACKER</div>
+        <div class="card-team">DATA VIZ</div>
+        <div class="card-stats">
+          <div class="cs"><span>Python</span></div>
+          <div class="cs"><span>D3.js</span></div>
+          <div class="cs"><span>FastAPI</span></div>
+        </div>
+        <p class="card-desc">Real-time basketball stats tracker with predictive analytics, player comparisons, and interactive visualizations.</p>
+        <div class="card-btns">
+          <a href="#" class="btn-small">LIVE</a>
+          <a href="#" class="btn-small outline">CODE</a>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="card-num">#04</div>
+        <div class="card-position">POWER FORWARD</div>
+        <div class="card-name">SOCIAL APP</div>
+        <div class="card-team">MOBILE</div>
+        <div class="card-stats">
+          <div class="cs"><span>React Native</span></div>
+          <div class="cs"><span>Firebase</span></div>
+          <div class="cs"><span>Redux</span></div>
+        </div>
+        <p class="card-desc">Social platform for basketball players to track games, challenge opponents, and share highlight clips.</p>
+        <div class="card-btns">
+          <a href="#" class="btn-small">LIVE</a>
+          <a href="#" class="btn-small outline">CODE</a>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="card-num">#05</div>
+        <div class="card-position">CENTER</div>
+        <div class="card-name">ML PIPELINE</div>
+        <div class="card-team">AI / ML</div>
+        <div class="card-stats">
+          <div class="cs"><span>PyTorch</span></div>
+          <div class="cs"><span>Docker</span></div>
+          <div class="cs"><span>AWS</span></div>
+        </div>
+        <p class="card-desc">End-to-end machine learning pipeline for predicting game outcomes with 84% accuracy using historical data.</p>
+        <div class="card-btns">
+          <a href="#" class="btn-small">LIVE</a>
+          <a href="#" class="btn-small outline">CODE</a>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="card-num">#06</div>
+        <div class="card-position">SIXTH MAN</div>
+        <div class="card-name">DEV TOOLS</div>
+        <div class="card-team">OPEN SOURCE</div>
+        <div class="card-stats">
+          <div class="cs"><span>TypeScript</span></div>
+          <div class="cs"><span>CLI</span></div>
+          <div class="cs"><span>npm</span></div>
+        </div>
+        <p class="card-desc">A CLI toolkit for developers to scaffold projects, automate workflows, and generate boilerplate at lightning speed.</p>
+        <div class="card-btns">
+          <a href="#" class="btn-small">LIVE</a>
+          <a href="#" class="btn-small outline">CODE</a>
+        </div>
+        <div class="card-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">06 / CONTACT</div>
+    <h2 class="section-title center reveal">SIGN <span class="accent">ME</span></h2>
+    <p class="contact-sub reveal">Ready to build a championship team? Let's talk.</p>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="ci-item">
+          <span class="ci-icon">📍</span>
+          <div><strong>BASE</strong><p>sid house, CA</p></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-icon">📧</span>
+          <div><strong>EMAIL</strong><p>sidhu4bro@gmail.com</p></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-icon">📱</span>
+          <div><strong>PHONE</strong><p>+91 6367337719</p></div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn">GH</a>
+          <a href="#" class="social-btn">LI</a>
+          <a href="#" class="social-btn">TW</a>
+          <a href="#" class="social-btn">IG</a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <input type="text" placeholder="YOUR NAME" required/>
+          <span class="form-line"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="YOUR EMAIL" required/>
+          <span class="form-line"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="SUBJECT"/>
+          <span class="form-line"></span>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="YOUR MESSAGE" rows="5" required></textarea>
+          <span class="form-line"></span>
+        </div>
+        <button type="submit" class="btn-primary full">THROW THE PASS →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-court">
+      <div class="fc-line top"></div>
+      <div class="fc-circle"></div>
+      <div class="fc-line bottom"></div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-logo">PLAYER<span class="accent">ONE</span></div>
+      <p class="footer-quote">"The only way to do great work is to love what you do." — Steve Jobs</p>
+      <p class="footer-copy">© 2024 siddharth mishra. Coded with ❤️ and 🏀</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
